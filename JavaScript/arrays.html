@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Arrays</title>
+    <script type="text/javascript">
+    let a = [1, 2, 3, 4, 5];
+    document.writeln("Array: " + a + "<br>");
+    document.writeln("Length of array: " + a.length + "<br>");
+    document.writeln("First element: " + a[0] + "<br>");
+    document.writeln("Last element: " + a[a.length - 1] + "<br>");
+    document.writeln(a+"<br>");
+    for(let i = 0;i<a.length;i++){
+        document.write(a[i]+"<br>")
+    }
+        a.push(65);
+        document.writeln("After push(65): " + a + "<br>");
+        let index = a.findIndex((element) => element === 3);
+        document.writeln("Index of element 3: " + index + "<br>");
+        document.writeln("Sorted array "+ a.sort()+"<br>");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
