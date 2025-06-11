@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+    //Dynamic Action
+    function myDemo(){
+        document.getElementById("h1").innerHTML="Anurag University" 
+    } 
+    // This function changes the text of the <h1> element with id="h1".
+    </script>
+</head>
+<body>
+     <button onclick="myDemo()">Click</button> <!--When this button is clicked, it calls the myDemo() function. -->
+    <h1 id="h1">Today is Wednesday</h1>    <!-- This is the element that gets updated dynamically when the button is clicked. -->
+</body>
+</html>
+
+<!-- onclick Attribute:
+Used for attaching an event to an HTML element.
+
+Runs the specified function when clicked.
+
+document.getElementById("id").innerHTML
+Accesses an element by its ID and changes its content. -->
