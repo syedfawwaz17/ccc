@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .form-box {
+            background-color: #fff;
+            padding: 40px 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 300px;
+        }
+
+        .form-box h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .form-box input {
+            width: 100%;
+            padding: 10px;
+            margin: 12px 0;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        .form-box input:focus {
+            border-color: #2575fc;
+            box-shadow: 0 0 8px #2575fc66;
+        }
+
+        .form-box button {
+            width: 100%;
+            padding: 12px;
+            background-color: #2575fc;
+            border: none;
+            color: #fff;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .form-box button:hover {
+            background-color: #1a5edb;
+        }
+
+        #res {
+            margin-top: 15px;
+            color: #d80000;
+            font-weight: bold;
+        }
+    </style>
+    <script>
+        let valForm = () => {
+            let gData = document.f1.n1.value;
+            let pwd = document.f1.pwd.value;
+            if (gData === "fawwaz" && pwd === "1234") {
+                document.write("Sucessfull login....");
+                setTimeout(()=>{ window.location.href = "home.html"},2000);
+            } else {
+                window.location.href = "error.html";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="form-box">
+        <h2>Login Form</h2>
+        <form name="f1">
+            <input type="text" name="n1" placeholder="Enter Username">
+            <input type="password" name="pwd" placeholder="Enter Password">
+            <button type="button" onclick="valForm()">Login</button>
+        </form>
+        <div id="res"></div>
+    </div>
+</body>
+</html>
