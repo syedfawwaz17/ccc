@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        let student = new Map();
+        student.set("Jhonny",9.8);
+        student.set("hari",8.4);
+        student.set("Ravi",9.3);
+        student.set("Bishnoi",9.1);
+        student.set("Sita",8.9);
+        student.set("Gita",8.7);
+        student.set("Rita",8.5);
+        student.set("Mahesh",6.7);
+        student.set("Suresh",7.5);
+        for(let k of student.entries()){
+            document.writeln(k+"<br>")
+        }
+
+        for(let k of student.keys()){
+            document.writeln(student.get(k)+"<br>");
+        }
+        document.writeln("Size of map: " + student.size + "<br>");
+        let maxCgpa = Math.max(...student.values());
+        document.writeln(("Max CGPA:" + maxCgpa)); 
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
