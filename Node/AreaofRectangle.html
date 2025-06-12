@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Area of Rectangle</title>
+<script type="text/javascript">
+let myfun=()=>{
+    class Area
+    {
+        set myArea(v)
+        {
+            let d=v.split(' ')
+            this.l=parseInt(d[0]);
+            this.b=parseInt(d[1]);
+        }
+        get myArea()
+        {
+            return this.l*this.b;
+        }
+    }
+ 
+    a1=new Area();
+    a1.myArea="10 20";
+    console.log(a1.myArea);
+}
+myfun();
+</script>
+</head>
+<body>
+ 
+</body>
+</html>
