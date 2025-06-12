@@ -39,6 +39,27 @@
         document.writeln("<br>"+s);
         let t=d.concat(" is a University");
         document.writeln("<br>"+t);
+        let u=d.match(/Anurag/);
+        document.writeln("<br>"+u);
+        let v=d.search("Anurag");
+        document.writeln("<br>"+v);
+        let w=d.localeCompare("Anurag University");
+        document.writeln("<br>"+w);
+        let x=d.repeat(2);
+        document.writeln("<br>"+x);
+        let y=d.padStart(20,"*");
+        document.writeln("<br>"+y);
+        let z=d.padEnd(20,"*");
+        document.writeln("<br>"+z);
+        let aa=d.split("").reverse().join("");
+        document.writeln("<br>"+aa);
+        let ab=d.match(/\w+/g);
+        document.writeln("<br>"+ab);
+        let ac=d.match(/\d+/g); 
+        document.writeln("<br>"+ac);
+        let ad=d.match(/\s+/g);
+        document.writeln("<br>"+ad);
+        
     </script>
 </head>
 <body>
